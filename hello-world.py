@@ -16,7 +16,7 @@ def CheckStringMd5(args):
     
 if __name__ == '__main__':
     #doing is this...
-    if sys.argv :
+    if len(sys.argv) > 1:
         print CheckStringMd5(sys.argv[1])
     else:
         print CheckStringMd5("123456")
