@@ -5,6 +5,7 @@
 # Date : 2017/06/22
 # 说明 ：hello wold
 
+import sys
 from hashlib import md5
 
 def CheckStringMd5(args):
@@ -15,5 +16,7 @@ def CheckStringMd5(args):
     
 if __name__ == '__main__':
     #doing is this...
-    #print CheckStringMd5("123456")
-    
+    if sys.argv :
+        print CheckStringMd5(sys.argv[1])
+    else:
+        print CheckStringMd5("123456")
